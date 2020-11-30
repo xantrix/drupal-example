@@ -39,5 +39,6 @@ environments:
     cronjobs:
       - name: drush cron
         schedule: "*/15 * * * *"
+        #command: drush cron --root=/app/docroot  
         command: drush cron
         service: cli
